@@ -635,13 +635,13 @@ public class MainMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_ListarActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        peso2 = Integer.parseInt(Peso2.getText()); 
-        int longitud = Integer.parseInt(Longitud.getText());
-        alas2 = new Alas(peso2, longitud, armas);
         
+            peso2 = Integer.parseInt(Peso2.getText()); 
+            int longitud = Integer.parseInt(Longitud.getText());
+            alas2 = new Alas(peso2, longitud, armas);
+            Alas.setVisible(false);
+            AgregarNave.setVisible(true);
         
-        Alas.setVisible(false);
-        AgregarNave.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed

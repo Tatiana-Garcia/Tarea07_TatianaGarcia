@@ -4,6 +4,7 @@ package tarea07_tatianagarcia;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Date;
+import javax.swing.JOptionPane;
 
 
 public class Nave {
@@ -57,7 +58,11 @@ public class Nave {
     }
 
     public void setAla(ArrayList<Alas> ala) {
-        this.ala = ala;
+        if(ala.size()<=4){
+            this.ala = ala;
+        }else{
+            JOptionPane.showMessageDialog(null, "Alas en punto maximo");
+        }
     }
 
     public ArrayList<Propulsores> getPropulsor() {
@@ -65,7 +70,12 @@ public class Nave {
     }
 
     public void setPropulsor(ArrayList<Propulsores> propulsor) {
-        this.propulsor = propulsor;
+        
+        if(propulsor.size()<=4){
+            this.propulsor = propulsor;
+        }else{
+            JOptionPane.showMessageDialog(null, "Alas en punto maximo");
+        }
     }
 
     public int getNumero() {
